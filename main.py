@@ -10,14 +10,14 @@ from time import gmtime, strftime
 
 from darkflow.net.build import TFNet
 import yolo_darkflow as yolo
-import tf_openpose_detector
+# import tf_openpose_detector
 
 """
 todo:
 - Selecting best detector => done
 - counting people in specific Area (instant count) ==> done
 - tracking ==> done
-- counting people passing through specific area (accumalative) and waiting time ==> done
+- time spent by each customer in specific area ==> done
 - report results to csv file == done
 """
 
@@ -210,11 +210,24 @@ def drawBoxes(frame, people):
 
 	return frame
 
+# calculate distance between two points
 def disTuple(pos1,pos2):
 	dis = int(((pos1[0]-pos2[0])**2 + (pos1[1]-pos2[1])**2)**0.5)
 	return dis
 
+"""
+The tracking algorithm implemented here is simple and associate current detectionAreas
+with the previous ones based on the distance between the center of bounding boxes
 
+minThresholdNewDetected: means that any new track should start by detection with high
+confidence and in this case 0.6 found to be a good choice
+
+minThresholdTracked: is the threshold used for the rest of detections in the track
+
+I did it this way to be able to keep track of the detected person even if it is 
+detected with low confidence but also being able to reject false positives that
+can be caused for using low threshold
+"""
 def tracker(lastDetected, currentDetected):
 	minThresholdNewDetected = 0.6
 	minThresholdTracked = 0.3
@@ -251,7 +264,9 @@ def tracker(lastDetected, currentDetected):
 
 def recordTimeSpent(trackedPeople, areas, fps, cameraId):
 	# event: (areaIdx, personId) ==> spent time
-	# update waiting time for events
+	# update waiting time for events and save it when the person leaves the the camera
+	# view. pair in this function refer to (areaIdx,personId)
+	
 	for trackedPerson in trackedPeople:
 		for areaIdx,area in enumerate(areas):
 			if checkIfPointInsideArea(area,trackedPerson.pos):
