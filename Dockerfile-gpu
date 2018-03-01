@@ -59,6 +59,6 @@ RUN cd ../../app \
 && cd models \
 && wget -o yolo.weights https://pjreddie.com/media/files/yolo.weights \
 && cd .. \
-&& bash install_tensorflow.sh
+&& bash install_tensorflow_gpu.sh
 
 CMD [ "bash" ]
