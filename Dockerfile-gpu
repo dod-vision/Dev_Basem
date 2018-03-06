@@ -59,10 +59,6 @@ RUN cd ../../app \
 && cd models \
 && wget -o yolo.weights https://pjreddie.com/media/files/yolo.weights \
 && cd .. \
-&& bash install_tensorflow.sh
-
-RUN pip3 install -r requirements.txt
-
-RUN bash get_darkflow.sh
+&& bash install_tensorflow_gpu.sh
 
 CMD [ "bash" ]

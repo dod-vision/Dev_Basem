@@ -1,0 +1,1202 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-a4bf54bef6fb.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-d5aa84dde2d5.css" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-40fcabbe0152.css" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>GitHub - thtrieu/darkflow: Translate darknet to tensorflow. Load trained weights, retrain/fine-tune using tensorflow, export constant graph def to mobile devices</title>
+    <meta name="description" content="GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over 79 million projects.">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars2.githubusercontent.com/u/9194247?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="thtrieu/darkflow" property="og:title" /><meta content="https://github.com/thtrieu/darkflow" property="og:url" /><meta content="darkflow - Translate darknet to tensorflow. Load trained weights, retrain/fine-tune using tensorflow, export constant graph def to mobile devices" property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="D34A:0E90:BE8E4D:16F7665:5A9EFE72" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="D34A:0E90:BE8E4D:16F7665:5A9EFE72" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MDhiYTkyNzU1YzdkNzcyODQ2ZTQ1MDcxZGU3NGJlM2ZjZGNhNDlmMDA3ZDMxNzFkNmMzMmMyZWI4YjUwMWE5Y3x7InJlbW90ZV9hZGRyZXNzIjoiMTY4LjE5Ni4yMjEuMjQyIiwicmVxdWVzdF9pZCI6IkQzNEE6MEU5MDpCRThFNEQ6MTZGNzY2NTo1QTlFRkU3MiIsInRpbWVzdGFtcCI6MTUyMDM2OTI2NiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES,JS_ROLLUP">
+
+  <meta name="html-safe-nonce" content="1e9c79bfbd4add88fc2073d4013d97a4b7cc9944">
+
+  <meta http-equiv="x-pjax-version" content="2783e5da3b2ca2708f1b9ecc72f614ee">
+  
+
+      <link href="https://github.com/thtrieu/darkflow/commits/master.atom" rel="alternate" title="Recent Commits to darkflow:master" type="application/atom+xml">
+
+  <meta name="description" content="darkflow - Translate darknet to tensorflow. Load trained weights, retrain/fine-tune using tensorflow, export constant graph def to mobile devices">
+  <meta name="go-import" content="github.com/thtrieu/darkflow git https://github.com/thtrieu/darkflow.git">
+
+  <meta content="9194247" name="octolytics-dimension-user_id" /><meta content="thtrieu" name="octolytics-dimension-user_login" /><meta content="65791375" name="octolytics-dimension-repository_id" /><meta content="thtrieu/darkflow" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="65791375" name="octolytics-dimension-repository_network_root_id" /><meta content="thtrieu/darkflow" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/thtrieu/darkflow" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+<link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/thtrieu/darkflow/search" class="js-site-search-form" data-scoped-search-url="/thtrieu/darkflow/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/thtrieu/darkflow" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2Fthtrieu%2Fdarkflow" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2Fthtrieu%2Fdarkflow"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/thtrieu/darkflow/watchers"
+     aria-label="165 users are watching this repository">
+    165
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fthtrieu%2Fdarkflow"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/thtrieu/darkflow/stargazers"
+      aria-label="2395 users starred this repository">
+      2,395
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fthtrieu%2Fdarkflow"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/thtrieu/darkflow/network" class="social-count"
+       aria-label="798 users forked this repository">
+      798
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/thtrieu" class="url fn" rel="author">thtrieu</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/thtrieu/darkflow" data-pjax="#js-repo-pjax-container">darkflow</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/thtrieu/darkflow" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /thtrieu/darkflow" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/thtrieu/darkflow/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /thtrieu/darkflow/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">223</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/thtrieu/darkflow/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls checks /thtrieu/darkflow/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">14</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/thtrieu/darkflow/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /thtrieu/darkflow/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a href="/thtrieu/darkflow/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /thtrieu/darkflow/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+      <div class="signup-prompt-bg rounded-1">
+      <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+        <div class="position-relative">
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/site/dismiss_signup_prompt" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="CEJHnMpvbGFN8opkkfysZcqKCBKCYSuU5U/QfP2gHFKUnMmyn2CbcrkdUgI6ARZzzecpqu8JBLsomWrjh1SAFQ==" /></div>
+            <button type="submit" class="position-absolute top-0 right-0 btn-link link-gray" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+              Dismiss
+            </button>
+</form>
+          <h3 class="pt-2">Join GitHub today</h3>
+          <p class="col-6 mx-auto">GitHub is home to over 20 million developers working together to host and review code, manage projects, and build software together.</p>
+          <p class="pb-2">
+            <a class="btn btn-blue" href="/join?source=prompt-code" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="js-repo-meta-container">
+  <div class="repository-meta mb-0  js-repo-meta-edit js-details-container ">
+    <div class="repository-meta-content col-11 mb-1">
+          <span class="col-11 text-gray-dark mr-2" itemprop="about">
+            Translate darknet to tensorflow. Load trained weights, retrain/fine-tune using tensorflow, export constant graph def to mobile devices
+          </span>
+    </div>
+
+  </div>
+
+    <div class="mb-3 repository-topics-container js-repository-topics-container js-details-container">
+      <div id="topics-list-container" data-url="/thtrieu/darkflow/settings/topics">
+          <div class="list-topics-container f6 mt-1">
+      <a href="/topics/tensorflow" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:tensorflow">
+        tensorflow
+      </a>
+      <a href="/topics/graph" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:graph">
+        graph
+      </a>
+      <a href="/topics/darknet" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:darknet">
+        darknet
+      </a>
+      <a href="/topics/deep-learning" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:deep-learning">
+        deep-learning
+      </a>
+      <a href="/topics/deep-neural-networks" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:deep-neural-networks">
+        deep-neural-networks
+      </a>
+      <a href="/topics/convolutional-neural-networks" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:convolutional-neural-networks">
+        convolutional-neural-networks
+      </a>
+      <a href="/topics/convolutional-networks" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:convolutional-networks">
+        convolutional-networks
+      </a>
+      <a href="/topics/image-processing" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:image-processing">
+        image-processing
+      </a>
+      <a href="/topics/object-detection" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:object-detection">
+        object-detection
+      </a>
+      <a href="/topics/machine-learning" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:machine-learning">
+        machine-learning
+      </a>
+      <a href="/topics/real-time" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:real-time">
+        real-time
+      </a>
+      <a href="/topics/mobile-development" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:mobile-development">
+        mobile-development
+      </a>
+  </div>
+
+
+      </div>
+
+    </div>
+</div>
+
+
+
+  <div class="overall-summary overall-summary-bottomless">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax href="/thtrieu/darkflow/commits/master">
+              <svg aria-hidden="true" class="octicon octicon-history" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"/></svg>
+              <span class="num text-emphasized">
+                540
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax href="/thtrieu/darkflow/branches">
+            <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            <span class="num text-emphasized">
+              1
+            </span>
+            branch
+          </a>
+        </li>
+
+        <li>
+          <a href="/thtrieu/darkflow/releases">
+            <svg aria-hidden="true" class="octicon octicon-tag" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+            <span class="num text-emphasized">
+              0
+            </span>
+            releases
+          </a>
+        </li>
+
+        <li>
+            <a href="/thtrieu/darkflow/graphs/contributors">
+  <svg aria-hidden="true" class="octicon octicon-organization" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4"/></svg>
+    <span class="num text-emphasized">
+      26
+    </span>
+    contributors
+</a>
+
+        </li>
+          <li>
+            <a href="/thtrieu/darkflow/blob/master/LICENSE">
+              <svg aria-hidden="true" class="octicon octicon-law" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+                GPL-3.0
+            </a>
+          </li>
+      </ul>
+
+        <div class="repository-lang-stats">
+          <ol class="repository-lang-stats-numbers">
+            <li>
+                <a href="/thtrieu/darkflow/search?l=python"  data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#3572A5;"></span>
+                  <span class="lang">Python</span>
+                  <span class="percent">100.0%</span>
+                </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+      <span class="language-color" aria-label="Python 100.0%" style="width:100.0%; background-color:#3572A5;" itemprop="keywords">Python</span>
+    </div>
+
+
+
+  <div class="file-navigation in-mid-page">
+
+    <details class="get-repo-select-menu js-menu-container float-right position-relative dropdown-details details-reset">
+  <summary class="btn btn-sm btn-primary">
+    Clone or download
+    <span class="dropdown-caret"></span>
+  </summary>
+  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container ">
+        <div class="clone-options https-clone-options">
+
+          <h4 class="mb-1">
+            Clone with HTTPS
+            <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+              <svg aria-hidden="true" class="octicon octicon-question" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+            </a>
+          </h4>
+          <p class="mb-2 get-repo-decription-text">
+            Use Git or checkout with SVN using the web URL.
+          </p>
+
+          <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm js-url-field" value="https://github.com/thtrieu/darkflow.git" aria-label="Clone this repository at https://github.com/thtrieu/darkflow.git" readonly>
+  <div class="input-group-button">
+    <clipboard-copy
+        data-clipboard-text="https://github.com/thtrieu/darkflow.git"
+        role="button"
+        aria-label="Copy to clipboard"
+        class="btn btn-sm tooltipped tooltipped-s"
+        data-copied-hint="Copied!">
+      <svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+    </clipboard-copy>
+  </div>
+</div>
+
+        </div>
+
+      <div class="mt-2">
+        
+<a href="/thtrieu/darkflow/archive/master.zip"
+   class="btn btn-outline get-repo-btn
+"
+   rel="nofollow"
+   data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+      </div>
+    </div>
+  </div>
+</details>
+
+
+  <div class="BtnGroup float-right">
+
+    <a href="/thtrieu/darkflow/find/master"
+      class="btn btn-sm empty-icon float-right BtnGroup-item"
+      data-pjax
+      data-hotkey="t"
+      data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/thtrieu/darkflow/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+        <button type="button" class="btn btn-sm disabled tooltipped tooltipped-n new-pull-request-btn" aria-label="You must be signed in to create a pull request">
+          New pull request
+        </button>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+  
+
+
+  <div class="commit-tease js-details-container Details">
+    <span class="float-right">
+      Latest commit
+      <a class="commit-tease-sha" href="/thtrieu/darkflow/commit/5fe906b347ab8584354e375a14ea2e7bdf5188d7" data-pjax>
+        5fe906b
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2018-02-26T15:07:44Z">Feb 26, 2018</relative-time></span>
+    </span>
+
+
+    <div class="d-flex no-wrap">
+      
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1"
+       aria-label="abagshaw">
+
+        <a href="/abagshaw" data-skip-pjax="true" class="avatar">
+          <img src="https://avatars2.githubusercontent.com/u/8594541?s=40&amp;v=4" width="20" height="20" alt="@abagshaw">
+        </a>
+  </div>
+</div>
+
+      <div class="flex-auto f6">
+        
+      <a href="/thtrieu/darkflow/commits?author=abagshaw"
+     class="commit-author tooltipped tooltipped-s user-mention"
+     aria-label="View all commits by abagshaw">abagshaw</a>
+
+
+  
+
+
+          <a href="/thtrieu/darkflow/commit/5fe906b347ab8584354e375a14ea2e7bdf5188d7" class="message" data-pjax="true" title="Merge pull request #581 from off99555/hotfix
+
+Show error message when an image is corrupted">Merge pull request</a> <a href="https://github.com/thtrieu/darkflow/pull/581" class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="297474105" data-permission-text="Issue title is private" data-url="https://github.com/thtrieu/darkflow/issues/581">#581</a> <a href="/thtrieu/darkflow/commit/5fe906b347ab8584354e375a14ea2e7bdf5188d7" class="message" data-pjax="true" title="Merge pull request #581 from off99555/hotfix
+
+Show error message when an image is corrupted">from off99555/hotfix</a>
+            <span class="hidden-text-expander inline">
+              <button type="button" class="ellipsis-expander js-details-target" aria-expanded="false">&hellip;</button>
+            </span>
+
+          <div class="commit-desc"><pre class="text-small">Show error message when an image is corrupted</pre></div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="file-wrap">
+
+  <a href="/thtrieu/darkflow/tree/5fe906b347ab8584354e375a14ea2e7bdf5188d7" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/tree/master/cfg" class="js-navigation-open" id="011134986548f3458aa3e7e2a7fceb8d-4950dc7bd166a2e5aafef9713a2b22eec613692a" title="cfg">cfg</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/6c655468433c03d9f7f3f32e02a805da9e43a89b" class="message" data-pjax="true" title="Fixed yolo-4c cfg to have 4 classes and added new labels flag">Fixed yolo-4c cfg to have 4 classes and added new labels flag</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-06-30T20:00:41Z">Jun 30, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/tree/master/darkflow" class="js-navigation-open" id="97062e839162b77aad8516ec7739b2c5-d949132b7eab18ff30bb2bb11059e12159cb266f" title="darkflow">darkflow</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/ce90828d965299ca9850215dcbdb019760ae3476" class="message" data-pjax="true" title="Show message when an image is corrupted">Show message when an image is corrupted</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-15T14:43:15Z">Feb 15, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/tree/master/sample_img" class="js-navigation-open" id="e594900ee29fbe676d31ad3839869db7-f8ce4e403045879352629ac29095613d30012f12" title="sample_img">sample_img</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/e860bb72e893eb7efbf7fc5ced8a445f4a7a657d" class="message" data-pjax="true" title="Clean up wording
+
+Test should be reserved for actually testing (i.e. pytest) - images
+should be stored in a more intuitively named folder and references to
+&quot;test&quot; should be changed to &quot;predict&quot; where appropirate.">Clean up wording</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-05-19T20:42:59Z">May 19, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/tree/master/test" class="js-navigation-open" id="098f6bcd4621d373cade4e832627b4f6-c4c075da2fb088c29639ca8db86980bb227181f6" title="test">test</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/e37785bb37fe68f164ccab69d464481d7353ac39" class="message" data-pjax="true" title="Back to travis">Back to travis</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-26T04:46:17Z">Feb 26, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/.coveragerc" class="js-navigation-open" id="6f1f859c6ca5c4cae7310924786cf661-37814ba04b09c9369135f9c18bc57f737ab718d1" title=".coveragerc">.coveragerc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/8fe2cf1469176fa2f82b2873419a2011dec5d69a" class="message" data-pjax="true" title="back to pytest-cov">back to pytest-cov</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-05-20T23:52:42Z">May 20, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/.gitignore" class="js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-7526d0eee8f86a9abfefb9ebfaa6be7d768fa404" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/36bb03d15183fc1db33cbd5db353b54ecb2114ec" class="message" data-pjax="true" title="Add tests for training">Add tests for training</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-05-22T04:11:20Z">May 22, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/.travis.yml" class="js-navigation-open" id="354f30a63fb0907d4ad57269548329e3-46f1ab77b8547851ee7224baa1f37271708b60d4" title=".travis.yml">.travis.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/9b150ff47cf9da0afa9e68f65b5219e552445028" class="message" data-pjax="true" title="Get rid of newline">Get rid of newline</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-26T05:03:35Z">Feb 26, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/LICENSE" class="js-navigation-open" id="9879d6db96fd29134fc802214163b95a-9cecc1d4669ee8af2ca727a5d8cde10cd8b2d7cc" itemprop="license" title="LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/93c54cd64f8ab3967fb0fa28f1667cf2371d5d1e" class="message" data-pjax="true" title="license">license</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-08-17T02:30:35Z">Aug 17, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/README.md" class="js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-9232904dfc0be656b01e018b1a66175c36e95bb2" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/2bdf435e473c20a079bae1a1a1e31eeaafd8b9d8" class="message" data-pjax="true" title="Revert demo image switch">Revert demo image switch</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-26T05:12:01Z">Feb 26, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/demo.gif" class="js-navigation-open" id="df537fdc576e33db40f6f4295b2ea8a0-19a8bc58f3d522d2cb2cf1fc5d3d5dda862816ca" title="demo.gif">demo.gif</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/5faf2b0b2bf35f0acfb5ae219c963c5571f283e4" class="message" data-pjax="true" title="Add">Add</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-11T20:12:02Z">Feb 11, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/flow" class="js-navigation-open" id="cff5497121104c2b8e0cb41ed2083a9b-e0239897dbfd79a44e6a4c4f3d012cb7a9c2b1ce" title="flow">flow</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/3d77fbe6547fe445ef812d1101765ee0d3aadf52" class="message" data-pjax="true" title="move flow code to cli.py">move flow code to cli.py</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-05-21T02:16:24Z">May 21, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/labels.txt" class="js-navigation-open" id="bb6156399573eb97ced5164ad6e2fafc-c42bfe343314420a6d74599fee700201e3478e78" title="labels.txt">labels.txt</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/a9f317d78e5a545a46e0eb3fd48e8a881ed77773" class="message" data-pjax="true" title="update README">update README</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-02T03:19:25Z">Apr 2, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/preview.png" class="js-navigation-open" id="154e07e3ace7fed93dc0a112d442dee5-2827ee6a5aa12f95ceb8d37406b5d83f5989de1d" title="preview.png">preview.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/643ddf65909ac8c3b4b819ffc8c3dab8d97caf42" class="message" data-pjax="true" title="++preview.png">++preview.png</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-03T05:19:59Z">Apr 3, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/thtrieu/darkflow/blob/master/setup.py" class="js-navigation-open" id="2eeaed663bd0d25b7e608891384b7298-d3d255e39466bda1ef0f5fc12994d5be10121d45" title="setup.py">setup.py</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/thtrieu/darkflow/commit/09839e04ad2e185f5b0b5411dabd9047fbac7792" class="message" data-pjax="true" title="Added support for macOS">Added support for macOS</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-25T15:54:57Z">Apr 25, 2017</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><h2><a href="#intro" aria-hidden="true" class="anchor" id="user-content-intro"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Intro</h2>
+<p><a href="https://travis-ci.org/thtrieu/darkflow" rel="nofollow"><img src="https://camo.githubusercontent.com/9e24e6a22fb2058ee83b557ef236047a7f0df4f9/68747470733a2f2f7472617669732d63692e6f72672f746874726965752f6461726b666c6f772e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/thtrieu/darkflow.svg?branch=master" style="max-width:100%;"></a> <a href="https://codecov.io/gh/thtrieu/darkflow" rel="nofollow"><img src="https://camo.githubusercontent.com/7fb28d76f1126b938b710cd34bb97fff1e32201e/68747470733a2f2f636f6465636f762e696f2f67682f746874726965752f6461726b666c6f772f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="codecov" data-canonical-src="https://codecov.io/gh/thtrieu/darkflow/branch/master/graph/badge.svg" style="max-width:100%;"></a></p>
+<p>Real-time object detection and classification. Paper: <a href="https://arxiv.org/pdf/1506.02640.pdf" rel="nofollow">version 1</a>, <a href="https://arxiv.org/pdf/1612.08242.pdf" rel="nofollow">version 2</a>.</p>
+<p>Read more about YOLO (in darknet) and download weight files <a href="http://pjreddie.com/darknet/yolo/" rel="nofollow">here</a>. In case the weight file cannot be found, I uploaded some of mine <a href="https://drive.google.com/drive/folders/0B1tW_VtY7onidEwyQ2FtQVplWEU" rel="nofollow">here</a>, which include <code>yolo-full</code> and <code>yolo-tiny</code> of v1.0, <code>tiny-yolo-v1.1</code> of v1.1 and <code>yolo</code>, <code>tiny-yolo-voc</code> of v2.</p>
+<p>See demo below or see on <a href="http://i.imgur.com/EyZZKAA.gif" rel="nofollow">this imgur</a></p>
+<p align="center"> <a href="/thtrieu/darkflow/blob/master/demo.gif" target="_blank"><img src="/thtrieu/darkflow/raw/master/demo.gif" style="max-width:100%;"></a> </p>
+<h2><a href="#dependencies" aria-hidden="true" class="anchor" id="user-content-dependencies"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependencies</h2>
+<p>Python3, tensorflow 1.0, numpy, opencv 3.</p>
+<h3><a href="#getting-started" aria-hidden="true" class="anchor" id="user-content-getting-started"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting started</h3>
+<p>You can choose <em>one</em> of the following three ways to get started with darkflow.</p>
+<ol>
+<li>
+<p>Just build the Cython extensions in place. NOTE: If installing this way you will have to use <code>./flow</code> in the cloned darkflow directory instead of <code>flow</code> as darkflow is not installed globally.</p>
+<pre><code>python3 setup.py build_ext --inplace
+</code></pre>
+</li>
+<li>
+<p>Let pip install darkflow globally in dev mode (still globally accessible, but changes to the code immediately take effect)</p>
+<pre><code>pip install -e .
+</code></pre>
+</li>
+<li>
+<p>Install with pip globally</p>
+<pre><code>pip install .
+</code></pre>
+</li>
+</ol>
+<h2><a href="#update" aria-hidden="true" class="anchor" id="user-content-update"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update</h2>
+<p><strong>Android demo on Tensorflow's</strong> <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorFlowYoloDetector.java">here</a></p>
+<p><strong>I am looking for help:</strong></p>
+<ul>
+<li><code>help wanted</code> labels in issue track</li>
+</ul>
+<h2><a href="#parsing-the-annotations" aria-hidden="true" class="anchor" id="user-content-parsing-the-annotations"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parsing the annotations</h2>
+<p>Skip this if you are not training or fine-tuning anything (you simply want to forward flow a trained net)</p>
+<p>For example, if you want to work with only 3 classes <code>tvmonitor</code>, <code>person</code>, <code>pottedplant</code>; edit <code>labels.txt</code> as follows</p>
+<pre><code>tvmonitor
+person
+pottedplant
+</code></pre>
+<p>And that's it. <code>darkflow</code> will take care of the rest. You can also set darkflow to load from a custom labels file with the <code>--labels</code> flag (i.e. <code>--labels myOtherLabelsFile.txt</code>). This can be helpful when working with multiple models with different sets of output labels. When this flag is not set, darkflow will load from <code>labels.txt</code> by default (unless you are using one of the recognized <code>.cfg</code> files designed for the COCO or VOC dataset - then the labels file will be ignored and the COCO or VOC labels will be loaded).</p>
+<h2><a href="#design-the-net" aria-hidden="true" class="anchor" id="user-content-design-the-net"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Design the net</h2>
+<p>Skip this if you are working with one of the original configurations since they are already there. Otherwise, see the following example:</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">...</span>
+
+[convolutional]
+batch_normalize <span class="pl-k">=</span> <span class="pl-c1">1</span>
+size <span class="pl-k">=</span> <span class="pl-c1">3</span>
+stride <span class="pl-k">=</span> <span class="pl-c1">1</span>
+pad <span class="pl-k">=</span> <span class="pl-c1">1</span>
+activation <span class="pl-k">=</span> leaky
+
+[maxpool]
+
+[connected]
+output <span class="pl-k">=</span> <span class="pl-c1">4096</span>
+activation <span class="pl-k">=</span> linear
+
+<span class="pl-c1">...</span></pre></div>
+<h2><a href="#flowing-the-graph-using-flow" aria-hidden="true" class="anchor" id="user-content-flowing-the-graph-using-flow"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flowing the graph using <code>flow</code></h2>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> Have a look at its options</span>
+flow --h</pre></div>
+<p>First, let's take a closer look at one of a very useful option <code>--load</code></p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> 1. Load tiny-yolo.weights</span>
+flow --model cfg/tiny-yolo.cfg --load bin/tiny-yolo.weights
+
+<span class="pl-c"><span class="pl-c">#</span> 2. To completely initialize a model, leave the --load option</span>
+flow --model cfg/yolo-new.cfg
+
+<span class="pl-c"><span class="pl-c">#</span> 3. It is useful to reuse the first identical layers of tiny for `yolo-new`</span>
+flow --model cfg/yolo-new.cfg --load bin/tiny-yolo.weights
+<span class="pl-c"><span class="pl-c">#</span> this will print out which layers are reused, which are initialized</span></pre></div>
+<p>All input images from default folder <code>sample_img/</code> are flowed through the net and predictions are put in <code>sample_img/out/</code>. We can always specify more parameters for such forward passes, such as detection threshold, batch size, images folder, etc.</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> Forward all images in sample_img/ using tiny yolo and 100% GPU usage</span>
+flow --imgdir sample_img/ --model cfg/tiny-yolo.cfg --load bin/tiny-yolo.weights --gpu 1.0</pre></div>
+<p>json output can be generated with descriptions of the pixel location of each bounding box and the pixel location. Each prediction is stored in the <code>sample_img/out</code> folder by default. An example json array is shown below.</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> Forward all images in sample_img/ using tiny yolo and JSON output.</span>
+flow --imgdir sample_img/ --model cfg/tiny-yolo.cfg --load bin/tiny-yolo.weights --json</pre></div>
+<p>JSON output:</p>
+<div class="highlight highlight-source-json"><pre>[{<span class="pl-s"><span class="pl-pds">"</span>label<span class="pl-pds">"</span></span>:<span class="pl-s"><span class="pl-pds">"</span>person<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>confidence<span class="pl-pds">"</span></span>: <span class="pl-c1">0.56</span>, <span class="pl-s"><span class="pl-pds">"</span>topleft<span class="pl-pds">"</span></span>: {<span class="pl-s"><span class="pl-pds">"</span>x<span class="pl-pds">"</span></span>: <span class="pl-c1">184</span>, <span class="pl-s"><span class="pl-pds">"</span>y<span class="pl-pds">"</span></span>: <span class="pl-c1">101</span>}, <span class="pl-s"><span class="pl-pds">"</span>bottomright<span class="pl-pds">"</span></span>: {<span class="pl-s"><span class="pl-pds">"</span>x<span class="pl-pds">"</span></span>: <span class="pl-c1">274</span>, <span class="pl-s"><span class="pl-pds">"</span>y<span class="pl-pds">"</span></span>: <span class="pl-c1">382</span>}},
+{<span class="pl-s"><span class="pl-pds">"</span>label<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>dog<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>confidence<span class="pl-pds">"</span></span>: <span class="pl-c1">0.32</span>, <span class="pl-s"><span class="pl-pds">"</span>topleft<span class="pl-pds">"</span></span>: {<span class="pl-s"><span class="pl-pds">"</span>x<span class="pl-pds">"</span></span>: <span class="pl-c1">71</span>, <span class="pl-s"><span class="pl-pds">"</span>y<span class="pl-pds">"</span></span>: <span class="pl-c1">263</span>}, <span class="pl-s"><span class="pl-pds">"</span>bottomright<span class="pl-pds">"</span></span>: {<span class="pl-s"><span class="pl-pds">"</span>x<span class="pl-pds">"</span></span>: <span class="pl-c1">193</span>, <span class="pl-s"><span class="pl-pds">"</span>y<span class="pl-pds">"</span></span>: <span class="pl-c1">353</span>}},
+{<span class="pl-s"><span class="pl-pds">"</span>label<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>horse<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>confidence<span class="pl-pds">"</span></span>: <span class="pl-c1">0.76</span>, <span class="pl-s"><span class="pl-pds">"</span>topleft<span class="pl-pds">"</span></span>: {<span class="pl-s"><span class="pl-pds">"</span>x<span class="pl-pds">"</span></span>: <span class="pl-c1">412</span>, <span class="pl-s"><span class="pl-pds">"</span>y<span class="pl-pds">"</span></span>: <span class="pl-c1">109</span>}, <span class="pl-s"><span class="pl-pds">"</span>bottomright<span class="pl-pds">"</span></span>: {<span class="pl-s"><span class="pl-pds">"</span>x<span class="pl-pds">"</span></span>: <span class="pl-c1">592</span>,<span class="pl-s"><span class="pl-pds">"</span>y<span class="pl-pds">"</span></span>: <span class="pl-c1">337</span>}}]</pre></div>
+<ul>
+<li>label: self explanatory</li>
+<li>confidence: somewhere between 0 and 1 (how confident yolo is about that detection)</li>
+<li>topleft: pixel coordinate of top left corner of box.</li>
+<li>bottomright: pixel coordinate of bottom right corner of box.</li>
+</ul>
+<h2><a href="#training-new-model" aria-hidden="true" class="anchor" id="user-content-training-new-model"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Training new model</h2>
+<p>Training is simple as you only have to add option <code>--train</code>. Training set and annotation will be parsed if this is the first time a new configuration is trained. To point to training set and annotations, use option <code>--dataset</code> and <code>--annotation</code>. A few examples:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> Initialize yolo-new from yolo-tiny, then train the net on 100% GPU:</span>
+flow --model cfg/yolo-new.cfg --load bin/tiny-yolo.weights --train --gpu 1.0
+
+<span class="pl-c"><span class="pl-c">#</span> Completely initialize yolo-new and train it with ADAM optimizer</span>
+flow --model cfg/yolo-new.cfg --train --trainer adam</pre></div>
+<p>During training, the script will occasionally save intermediate results into Tensorflow checkpoints, stored in <code>ckpt/</code>. To resume to any checkpoint before performing training/testing, use <code>--load [checkpoint_num]</code> option, if <code>checkpoint_num &lt; 0</code>, <code>darkflow</code> will load the most recent save by parsing <code>ckpt/checkpoint</code>.</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> Resume the most recent checkpoint for training</span>
+flow --train --model cfg/yolo-new.cfg --load -1
+
+<span class="pl-c"><span class="pl-c">#</span> Test with checkpoint at step 1500</span>
+flow --model cfg/yolo-new.cfg --load 1500
+
+<span class="pl-c"><span class="pl-c">#</span> Fine tuning yolo-tiny from the original one</span>
+flow --train --model cfg/tiny-yolo.cfg --load bin/tiny-yolo.weights</pre></div>
+<p>Example of training on Pascal VOC 2007:</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> Download the Pascal VOC dataset:</span>
+curl -O https://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar
+tar xf VOCtest_06-Nov-2007.tar
+
+<span class="pl-c"><span class="pl-c">#</span> An example of the Pascal VOC annotation format:</span>
+vim VOCdevkit/VOC2007/Annotations/000001.xml
+
+<span class="pl-c"><span class="pl-c">#</span> Train the net on the Pascal dataset:</span>
+flow --model cfg/yolo-new.cfg --train --dataset <span class="pl-s"><span class="pl-pds">"</span>~/VOCdevkit/VOC2007/JPEGImages<span class="pl-pds">"</span></span> --annotation <span class="pl-s"><span class="pl-pds">"</span>~/VOCdevkit/VOC2007/Annotations<span class="pl-pds">"</span></span></pre></div>
+<h3><a href="#training-on-your-own-dataset" aria-hidden="true" class="anchor" id="user-content-training-on-your-own-dataset"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Training on your own dataset</h3>
+<p><em>The steps below assume we want to use tiny YOLO and our dataset has 3 classes</em></p>
+<ol>
+<li>
+<p>Create a copy of the configuration file <code>tiny-yolo-voc.cfg</code> and rename it according to your preference <code>tiny-yolo-voc-3c.cfg</code> (It is crucial that you leave the original <code>tiny-yolo-voc.cfg</code> file unchanged, see below for explanation).</p>
+</li>
+<li>
+<p>In <code>tiny-yolo-voc-3c.cfg</code>, change classes in the [region] layer (the last layer) to the number of classes you are going to train for. In our case, classes are set to 3.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">...</span>
+
+[region]
+anchors <span class="pl-k">=</span> <span class="pl-c1">1.08</span>,<span class="pl-c1">1.19</span>,  <span class="pl-c1">3.42</span>,<span class="pl-c1">4.41</span>,  <span class="pl-c1">6.63</span>,<span class="pl-c1">11.38</span>,  <span class="pl-c1">9.42</span>,<span class="pl-c1">5.11</span>,  <span class="pl-c1">16.62</span>,<span class="pl-c1">10.52</span>
+bias_match<span class="pl-k">=</span><span class="pl-c1">1</span>
+classes<span class="pl-k">=</span><span class="pl-c1">3</span>
+coords<span class="pl-k">=</span><span class="pl-c1">4</span>
+num<span class="pl-k">=</span><span class="pl-c1">5</span>
+softmax<span class="pl-k">=</span><span class="pl-c1">1</span>
+
+<span class="pl-c1">...</span></pre></div>
+</li>
+<li>
+<p>In <code>tiny-yolo-voc-3c.cfg</code>, change filters in the [convolutional] layer (the second to last layer) to num * (classes + 5). In our case, num is 5 and classes are 3 so 5 * (3 + 5) = 40 therefore filters are set to 40.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-c1">...</span>
+
+[convolutional]
+size<span class="pl-k">=</span><span class="pl-c1">1</span>
+stride<span class="pl-k">=</span><span class="pl-c1">1</span>
+pad<span class="pl-k">=</span><span class="pl-c1">1</span>
+filters<span class="pl-k">=</span><span class="pl-c1">40</span>
+activation<span class="pl-k">=</span>linear
+
+[region]
+anchors <span class="pl-k">=</span> <span class="pl-c1">1.08</span>,<span class="pl-c1">1.19</span>,  <span class="pl-c1">3.42</span>,<span class="pl-c1">4.41</span>,  <span class="pl-c1">6.63</span>,<span class="pl-c1">11.38</span>,  <span class="pl-c1">9.42</span>,<span class="pl-c1">5.11</span>,  <span class="pl-c1">16.62</span>,<span class="pl-c1">10.52</span>
+
+<span class="pl-c1">...</span></pre></div>
+</li>
+<li>
+<p>Change <code>labels.txt</code> to include the label(s) you want to train on (number of labels should be the same as the number of classes you set in <code>tiny-yolo-voc-3c.cfg</code> file). In our case, <code>labels.txt</code> will contain 3 labels.</p>
+<pre><code>label1
+label2
+label3
+</code></pre>
+</li>
+<li>
+<p>Reference the <code>tiny-yolo-voc-3c.cfg</code> model when you train.</p>
+<p><code>flow --model cfg/tiny-yolo-voc-3c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images</code></p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Why should I leave the original <code>tiny-yolo-voc.cfg</code> file unchanged?</p>
+<p>When darkflow sees you are loading <code>tiny-yolo-voc.weights</code> it will look for <code>tiny-yolo-voc.cfg</code> in your cfg/ folder and compare that configuration file to the new one you have set with <code>--model cfg/tiny-yolo-voc-3c.cfg</code>. In this case, every layer will have the same exact number of weights except for the last two, so it will load the weights into all layers up to the last two because they now contain different number of weights.</p>
+</li>
+</ul>
+<h2><a href="#cameravideo-file-demo" aria-hidden="true" class="anchor" id="user-content-cameravideo-file-demo"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Camera/video file demo</h2>
+<p>For a demo that entirely runs on the CPU:</p>
+<div class="highlight highlight-source-shell"><pre>flow --model cfg/yolo-new.cfg --load bin/yolo-new.weights --demo videofile.avi</pre></div>
+<p>For a demo that runs 100% on the GPU:</p>
+<div class="highlight highlight-source-shell"><pre>flow --model cfg/yolo-new.cfg --load bin/yolo-new.weights --demo videofile.avi --gpu 1.0</pre></div>
+<p>To use your webcam/camera, simply replace <code>videofile.avi</code> with keyword <code>camera</code>.</p>
+<p>To save a video with predicted bounding box, add <code>--saveVideo</code> option.</p>
+<h2><a href="#using-darkflow-from-another-python-application" aria-hidden="true" class="anchor" id="user-content-using-darkflow-from-another-python-application"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using darkflow from another python application</h2>
+<p>Please note that <code>return_predict(img)</code> must take an <code>numpy.ndarray</code>. Your image must be loaded beforehand and passed to <code>return_predict(img)</code>. Passing the file path won't work.</p>
+<p>Result from <code>return_predict(img)</code> will be a list of dictionaries representing each detected object's values in the same format as the JSON output listed above.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> darkflow.net.build <span class="pl-k">import</span> TFNet
+<span class="pl-k">import</span> cv2
+
+options <span class="pl-k">=</span> {<span class="pl-s"><span class="pl-pds">"</span>model<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>cfg/yolo.cfg<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>load<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>bin/yolo.weights<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>threshold<span class="pl-pds">"</span></span>: <span class="pl-c1">0.1</span>}
+
+tfnet <span class="pl-k">=</span> TFNet(options)
+
+imgcv <span class="pl-k">=</span> cv2.imread(<span class="pl-s"><span class="pl-pds">"</span>./sample_img/sample_dog.jpg<span class="pl-pds">"</span></span>)
+result <span class="pl-k">=</span> tfnet.return_predict(imgcv)
+<span class="pl-c1">print</span>(result)</pre></div>
+<h2><a href="#save-the-built-graph-to-a-protobuf-file-pb" aria-hidden="true" class="anchor" id="user-content-save-the-built-graph-to-a-protobuf-file-pb"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Save the built graph to a protobuf file (<code>.pb</code>)</h2>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span># Saving the lastest checkpoint to protobuf file</span>
+flow --model cfg/yolo-new.cfg --load -1 --savepb
+
+<span class="pl-c"><span class="pl-c">#</span># Saving graph and weights to protobuf file</span>
+flow --model cfg/yolo.cfg --load bin/yolo.weights --savepb</pre></div>
+<p>When saving the <code>.pb</code> file, a <code>.meta</code> file will also be generated alongside it. This <code>.meta</code> file is a JSON dump of everything in the <code>meta</code> dictionary that contains information nessecary for post-processing such as <code>anchors</code> and <code>labels</code>. This way, everything you need to make predictions from the graph and do post processing is contained in those two files - no need to have the <code>.cfg</code> or any labels file tagging along.</p>
+<p>The created <code>.pb</code> file can be used to migrate the graph to mobile devices (JAVA / C++ / Objective-C++). The name of input tensor and output tensor are respectively <code>'input'</code> and <code>'output'</code>. For further usage of this protobuf file, please refer to the official documentation of <code>Tensorflow</code> on C++ API <a href="https://www.tensorflow.org/versions/r0.9/api_docs/cc/index.html" rel="nofollow"><em>here</em></a>. To run it on, say, iOS application, simply add the file to Bundle Resources and update the path to this file inside source code.</p>
+<p>Also, darkflow supports loading from a <code>.pb</code> and <code>.meta</code> file for generating predictions (instead of loading from a <code>.cfg</code> and checkpoint or <code>.weights</code>).</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span># Forward images in sample_img for predictions based on protobuf file</span>
+flow --pbLoad built_graph/yolo.pb --metaLoad built_graph/yolo.meta --imgdir sample_img/</pre></div>
+<p>If you'd like to load a <code>.pb</code> and <code>.meta</code> file when using <code>return_predict()</code> you can set the <code>"pbLoad"</code> and <code>"metaLoad"</code> options in place of the <code>"model"</code> and <code>"load"</code> options you would normally set.</p>
+<p>That's all.</p>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.47098s from unicorn-911335991-20lr1">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-terms-of-service/" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-2420ba9258bd.js" type="application/javascript"></script>
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ea8cfb713b12.js" type="application/javascript"></script>
+    
+    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-9dac5a5d6cd8.js" type="application/javascript"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  
+
+  </body>
+</html>
+

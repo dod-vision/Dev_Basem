@@ -15,7 +15,7 @@ where darkflow is installed
 """
 
 def getYoloDetector(threshold = 0.6):
-	darkflowPath = "/home/basem/ws/git/darkflow-master/"
+	darkflowPath = "/app/darkflow/"
 	options = {"model": darkflowPath+"cfg/yolo.cfg", 
 	    	  	 "load":  darkflowPath+"yolo.weights", 
 			   		 "threshold": threshold,

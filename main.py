@@ -144,6 +144,7 @@ def readAreas(frame):
 	detectionArea  = []
 
 	while True:
+		print('while true')
 		drawingFrame = frame.copy()
 		drawingFrame = drawAreas(drawingFrame,detectionAreas)
 		drawingFrame = drawAreas(drawingFrame,[detectionArea])		
