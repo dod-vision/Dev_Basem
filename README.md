@@ -15,4 +15,21 @@ python main.py --videoCam video.mp4 --record
 
 ## Locating target Areas
 When the code starts You will have a frozen frame and you will need to locate the target areas for counting people and that can be done by pressing one click to specify conrner points and double click to save the area and start locating the next one and after locating all areas press Esc.
+```
 
+# Docker
+
+## Acessar pasta do projeto
+
+## Create docker image
+```
+docker build -t dod .
+```
+## Get project directory
+```
+pwd
+```
+## Create and start container
+```
+docker run -it -v <project_directory>:/app -p 8899:8899 --name dod_test dod /bin/bash
+```
