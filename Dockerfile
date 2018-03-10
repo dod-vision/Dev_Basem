@@ -61,6 +61,8 @@ RUN cd ../../app \
 && cd .. \
 && bash install_tensorflow.sh
 
+COPY requirements.txt app/requirements.txt
+WORKDIR /app
 RUN pip3 install -r requirements.txt
 
 RUN bash get_darkflow.sh
