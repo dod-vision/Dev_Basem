@@ -36,7 +36,7 @@ def parseDetection(detection):
 	return box, confidence, label
 
 
-def drawBoxes(detections, frame,selectedClasses):
+def drawBoxes(detections, frame, selectedClasses):
 
 	for detection in detections:
 		boxTl = (detection['topleft']['x'], detection['topleft']['y'])

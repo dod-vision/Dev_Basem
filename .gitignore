@@ -1,4 +1,6 @@
 .idea/
 *.avi
 *.mp4
+*.jpeg
 darkflow/
+.Trash-0/
